@@ -58,10 +58,14 @@ const MovieDetails = () => {
       <List>
         <p>Additional information</p>
         <Item>
-          <Links to="cast">Cast</Links>
+          <Links to="cast" state={{ from: back }}>
+            Cast
+          </Links>
         </Item>
         <Item>
-          <Links to="reviews">Reviews</Links>
+          <Links to="reviews" state={{ from: back }}>
+            Reviews
+          </Links>
         </Item>
       </List>
       <Suspense fallback={<h1>Movie Details to be appeared</h1>}>
